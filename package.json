@@ -1,0 +1,22 @@
+{
+  "name": "react-materials",
+  "version": "1.0.0",
+  "description": "react物料",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiazhiqiang/react-materials.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "xiazhiqiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiazhiqiang/react-materials/issues"
+  },
+  "homepage": "https://github.com/xiazhiqiang/react-materials#readme"
+}
