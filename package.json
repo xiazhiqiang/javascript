@@ -2,21 +2,35 @@
   "name": "react-materials",
   "version": "1.0.0",
   "description": "react物料",
-  "main": "index.js",
+  "author": "xiazhiqiang",
+  "keywords": [
+    "react"
+  ],
   "scripts": {
+    "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "ghooks": "^2.0.4",
+    "validate-commit-msg": "^2.14.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xiazhiqiang/react-materials.git"
   },
-  "keywords": [
-    "react"
-  ],
-  "author": "xiazhiqiang",
-  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
   "bugs": {
     "url": "https://github.com/xiazhiqiang/react-materials/issues"
   },
-  "homepage": "https://github.com/xiazhiqiang/react-materials#readme"
+  "homepage": "https://github.com/xiazhiqiang/react-materials#readme",
+  "license": "ISC"
 }
