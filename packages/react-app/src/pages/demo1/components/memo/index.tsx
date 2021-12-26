@@ -6,7 +6,7 @@ export const Normal = () => {
   const [num, setNum] = useState(2000);
 
   const computeNum = (number) => {
-    console.log("compute num");
+    console.log("run compute num");
     return number * 2;
   };
 
@@ -27,7 +27,7 @@ export const Optimize = () => {
   const [num, setNum] = useState(2000);
 
   const computeNum = (number) => {
-    console.log("compute num");
+    console.log("run compute num");
     return number * 2;
   };
 
