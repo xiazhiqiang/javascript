@@ -1,0 +1,19 @@
+.flex-container {
+  margin: 20px auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+
+  .tip {
+    color: red;
+    font-style: italic;
+  }
+}
