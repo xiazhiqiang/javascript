@@ -100,3 +100,17 @@ module.exports = function override(config, env) {
   return config;
 }
 ```
+
+## 增加 sass 及 css module 支持
+
+- 安装依赖 sass
+
+```shell
+npm i sass -D
+```
+
+- 修改 css 命名及引用
+
+```jsx
+import styles from "./index.module.scss";
+```
