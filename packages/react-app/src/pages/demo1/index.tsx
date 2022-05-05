@@ -5,7 +5,8 @@ import styles from "./index.module.scss";
 
 export default function Demo1() {
   useEffect(() => {
-    document.title = "useMemo和useCallback";
+    document.title = "useMemo和useCallback用法";
+    console.clear();
   }, []);
 
   return (

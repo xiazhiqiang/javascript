@@ -1,16 +1,18 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Dashboard from "./pages/dashboard";
-import Demo1 from "./pages/demo1";
+const Home = lazy(() => import("./pages/home"));
+const Demo1 = lazy(() => import("./pages/demo1"));
 
 export default function App(props) {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/demo1" element={<Demo1 />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/demo1" element={<Demo1 />} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
