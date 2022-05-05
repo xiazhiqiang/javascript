@@ -18,10 +18,10 @@ module.exports = (env, args) => {
       clean: true, // 清除目录后输出
       path: path.join(__dirname, "dist"),
       filename: "[name].js",
-      library: {
-        name: "jsmodule",
-        type: "umd",
-      },
+      // library: {
+      //   name: "jsmodule",
+      //   type: "umd",
+      // },
     },
 
     resolve: {
