@@ -9,9 +9,9 @@ module.exports = (env, args) => {
     devtool: args.mode !== "production" ? "source-map" : "hidden-source-map",
 
     entry: {
-      index: path.join(__dirname, "src/commonjs/index.cjs"),
-      index2: path.join(__dirname, "src/es6/index.mjs"),
-      index3: path.join(__dirname, "src/dynamicImport/index.mjs"),
+      commonjs: path.join(__dirname, "src/commonjs/index.cjs"),
+      esmodule: path.join(__dirname, "src/es6/index.mjs"),
+      dynamic: path.join(__dirname, "src/dynamicImport/index.mjs"),
     },
 
     output: {
