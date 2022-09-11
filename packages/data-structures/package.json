@@ -1,0 +1,24 @@
+{
+  "name": "data-structure-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "ts-node ./src/index",
+    "start": "npm run clean && ttsc -w",
+    "build": "npm run clean && ttsc",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "诚沐",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.3.8",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.3.5",
+    "typescript-transform-paths": "^3.2.1"
+  },
+  "dependencies": {}
+}
