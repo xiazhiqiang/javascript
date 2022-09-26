@@ -123,6 +123,33 @@ export class Deque {
   }
 }
 
+/**
+ * 回文是指从头到尾或从尾到头字符串是一样的，最简单的方法就是字符串反向排列后仍相等
+ * 或者通过栈和双端队列实现
+ */
+export const palindromeChecker = (str = "") => {
+  if (!str) {
+    return false;
+  }
+  str = String(str).toLocaleLowerCase();
+  const deque = new Deque();
+  // 字符串入队列
+  for (let i = 0, len = str.length; i < len; i++) {
+    deque.addBack(str[i]);
+  }
+
+  // 从两端分别出队，并比较是否相等，直到队列中只剩下一个元素
+  while (deque.size() > 1) {
+    const front = deque.removeFront();
+    const back = deque.removeBack();
+    if (front !== back) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
 export const dequeUsage = () => {
   console.log("\ndeque usage:");
   const deque = new Deque();
@@ -134,4 +161,7 @@ export const dequeUsage = () => {
   console.log("deque: ", deque.toString());
   deque.removeFront();
   console.log("deque: ", deque.toString());
+
+  console.log("\n回文应用：");
+  console.log("回文检测: ", palindromeChecker("1221"));
 };
