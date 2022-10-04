@@ -2,6 +2,9 @@ import { stackArrayUsage } from "./stack-array";
 import { stackUsage } from "./stack";
 import { queueUsage } from "./queue";
 import { dequeUsage } from "./deque";
+import { linkedListUsage } from "./linked-list";
+import { doubleLinkedListUsage } from "./double-linked-list";
+import { circularLinkedListUsage } from "./circular-linked-list";
 
 (() => {
   // 栈数组实现
@@ -15,4 +18,13 @@ import { dequeUsage } from "./deque";
 
   // 双端队列
   dequeUsage();
+
+  // 链表
+  linkedListUsage();
+
+  // 双向链表
+  doubleLinkedListUsage();
+
+  // 循环链表
+  circularLinkedListUsage();
 })();
