@@ -1,11 +1,11 @@
-import { Node, equal } from "./utils";
+import { Node, defaultEqual } from "./utils";
 /**
  * 链表
  */
 export class LinkedList {
   [x: string]: any;
 
-  constructor(equalsFn = equal) {
+  constructor(equalsFn = defaultEqual) {
     this.count = 0;
     this.head = undefined; // 头指针
     this.equalsFn = equalsFn;
@@ -103,9 +103,11 @@ export class LinkedList {
         previous = current;
         current = current.next;
         i++;
+      } else {
+        return current;
       }
     }
-    return current;
+    return undefined;
   }
 
   insert(element: any, index: number) {

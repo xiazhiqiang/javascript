@@ -1,5 +1,5 @@
 import { DoubleLinkedList } from "./double-linked-list";
-import { DoubleNode, equal, Node } from "./utils";
+import { DoubleNode, defaultEqual, Node } from "./utils";
 
 /**
  * 双向循环链表
@@ -7,7 +7,7 @@ import { DoubleNode, equal, Node } from "./utils";
 export class CircularDoubleLinkedList extends DoubleLinkedList {
   [x: string]: any;
 
-  constructor(equalsFn = equal) {
+  constructor(equalsFn = defaultEqual) {
     super(equalsFn);
   }
 

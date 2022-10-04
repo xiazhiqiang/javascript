@@ -1,5 +1,5 @@
 import { LinkedList } from "./linked-list";
-import { equal, Node } from "./utils";
+import { defaultEqual, Node } from "./utils";
 
 /**
  * 循环链表
@@ -7,7 +7,7 @@ import { equal, Node } from "./utils";
 export class CircularLinkedList extends LinkedList {
   [x: string]: any;
 
-  constructor(equalsFn = equal) {
+  constructor(equalsFn = defaultEqual) {
     super(equalsFn);
   }
 

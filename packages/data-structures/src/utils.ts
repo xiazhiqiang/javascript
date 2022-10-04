@@ -20,6 +20,13 @@ export class DoubleNode extends Node {
   }
 }
 
-export const equal = function (a: any, b: any) {
+export const defaultEqual = function (a: any, b: any) {
   return a === b;
+};
+
+export const defaultCompare = function (a: any, b: any) {
+  if (a === b) {
+    return 0;
+  }
+  return a < b ? -1 : 1;
 };

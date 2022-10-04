@@ -1,5 +1,5 @@
 import { LinkedList } from "./linked-list";
-import { DoubleNode, equal } from "./utils";
+import { DoubleNode, defaultEqual } from "./utils";
 
 /**
  * 双向链表
@@ -9,7 +9,7 @@ import { DoubleNode, equal } from "./utils";
 export class DoubleLinkedList extends LinkedList {
   [x: string]: any;
 
-  constructor(equalsFn = equal) {
+  constructor(equalsFn = defaultEqual) {
     super(equalsFn);
     this.tail = undefined; // 尾指针
   }
