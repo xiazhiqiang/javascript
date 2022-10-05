@@ -20,13 +20,37 @@ export class DoubleNode extends Node {
   }
 }
 
-export const defaultEqual = function (a: any, b: any) {
+export function defaultEqual(a: any, b: any) {
   return a === b;
-};
+}
 
-export const defaultCompare = function (a: any, b: any) {
+export function defaultCompare(a: any, b: any) {
   if (a === b) {
     return 0;
   }
   return a < b ? -1 : 1;
-};
+}
+
+export function defaultToString(item: any) {
+  if (item === null) {
+    return "NULL";
+  } else if (item === undefined) {
+    return "UNDEFINED";
+  } else if (typeof item === "string" || item instanceof String) {
+    return `${item}`;
+  }
+  return item.toString();
+}
+
+export class ValuePair {
+  [x: string]: any;
+
+  constructor(key: any, value: any) {
+    this.key = key;
+    this.value = value;
+  }
+
+  toString() {
+    return `${this.key}=${this.value}`;
+  }
+}

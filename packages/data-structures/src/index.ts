@@ -5,6 +5,7 @@ import { dequeUsage } from "./deque";
 import { linkedListUsage } from "./linked-list";
 import { doubleLinkedListUsage } from "./double-linked-list";
 import { circularLinkedListUsage } from "./circular-linked-list";
+import { setUsage } from "./set";
 
 (() => {
   // 栈数组实现
@@ -27,4 +28,7 @@ import { circularLinkedListUsage } from "./circular-linked-list";
 
   // 循环链表
   circularLinkedListUsage();
+
+  // 集合
+  setUsage();
 })();
