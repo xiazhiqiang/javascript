@@ -79,7 +79,11 @@ export class LinkedList {
     let previous;
     while (current) {
       if (this.equalsFn(current.element, element)) {
-        previous.next = current.next;
+        if (previous) {
+          previous.next = current.next;
+        } else {
+          this.head = undefined;
+        }
         this.count--;
         return current;
       } else {

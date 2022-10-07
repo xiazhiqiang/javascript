@@ -54,3 +54,20 @@ export class ValuePair {
     return `${this.key}=${this.value}`;
   }
 }
+
+export class TreeNode {
+  [x: string]: any;
+
+  constructor(key: any) {
+    this.key = key;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+export function swap(array: any[], a: number, b: number) {
+  const temp = array[a];
+  array[a] = array[b];
+  array[b] = temp;
+  return array;
+}
