@@ -71,3 +71,5 @@ export function swap(array: any[], a: number, b: number) {
   array[b] = temp;
   return array;
 }
+
+export const Colors = { WHITE: 0, GREY: 1, BLACK: 2 };

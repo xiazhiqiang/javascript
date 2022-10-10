@@ -3,7 +3,7 @@ import { print } from "./utils";
 /**
  * 对象堆栈
  */
-export default class Stack {
+export class Stack {
   [x: string]: any;
 
   constructor() {
