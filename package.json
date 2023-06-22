@@ -1,25 +1,27 @@
 {
   "private": true,
-  "name": "js-materials",
+  "name": "javascript",
   "version": "1.0.0",
-  "description": "javascript",
+  "description": "javascript related",
   "author": "xiazhiqiang",
   "keywords": [
-    "react"
+    "javascript",
+    "nodejs"
   ],
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "scripts": {
-    "clean": "yarn clean",
+    "clean": "./cleanup.sh",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "husky": "^8.0.3",
-    "lerna": "^7.0.2"
+    "husky": "^8.0.0",
+    "lerna": "^6.0.0"
   },
   "engines": {
     "node": ">=14",
@@ -33,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiazhiqiang/js-materials.git"
+    "url": "git+https://github.com/xiazhiqiang/javascript.git"
   },
   "bugs": {
-    "url": "https://github.com/xiazhiqiang/js-materials/issues"
+    "url": "https://github.com/xiazhiqiang/javascript/issues"
   },
-  "homepage": "https://github.com/xiazhiqiang/js-materials#readme",
+  "homepage": "https://github.com/xiazhiqiang/javascript#readme",
   "license": "ISC"
 }

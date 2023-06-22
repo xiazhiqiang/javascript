@@ -1,3 +1,3 @@
-# js-materials
+# javascript
 
-js module, algorithm, application, demos and so on.
+javascript tools, modules, algorithm, application, demos and so on.
