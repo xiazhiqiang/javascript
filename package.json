@@ -1,22 +1,39 @@
 {
-  "private": true,
   "name": "javascript",
   "version": "1.0.0",
+  "private": true,
   "description": "javascript related",
-  "author": "xiazhiqiang",
   "keywords": [
     "javascript",
     "nodejs"
   ],
+  "homepage": "https://github.com/xiazhiqiang/javascript#readme",
+  "bugs": {
+    "url": "https://github.com/xiazhiqiang/javascript/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiazhiqiang/javascript.git"
+  },
+  "license": "ISC",
+  "author": "xiazhiqiang",
   "workspaces": [
     "packages/*",
     "examples/*"
   ],
   "scripts": {
-    "clean": "./cleanup.sh",
+    "bootstrap": "yarn install --ignore-engines",
+    "build": "lerna run build --stream --sort",
+    "clean": "lerna clean && rm -rf node_modules package-lock.json yarn.lock **/package-lock.json **/yarn.lock",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
@@ -27,19 +44,5 @@
     "node": ">=14",
     "npm": ">=6",
     "yarn": ">=1"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiazhiqiang/javascript.git"
-  },
-  "bugs": {
-    "url": "https://github.com/xiazhiqiang/javascript/issues"
-  },
-  "homepage": "https://github.com/xiazhiqiang/javascript#readme",
-  "license": "ISC"
+  }
 }
