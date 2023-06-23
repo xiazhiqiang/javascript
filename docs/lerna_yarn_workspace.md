@@ -9,7 +9,7 @@ npx lerna init
 ## 添加子工程
 
 ```shell
-npx lerna create [子工程name]
+npx lerna create <子工程name> [目录名，默认workspaces第一个配置]
 ```
 
 ## 配置
