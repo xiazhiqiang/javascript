@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import styles from "../../index.module.scss";
 
 const PureComp = React.memo(({ handleClick }: any) => {
-  console.log("Component rending");
+  console.log("PureComponent rending");
   return (
     <p>
       <button onClick={handleClick}>PureComponent</button>

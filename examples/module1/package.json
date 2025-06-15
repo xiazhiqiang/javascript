@@ -1,0 +1,24 @@
+{
+  "name": "module1",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "xiazhiqiang <xiazhiqiangcuc@126.com>",
+  "homepage": "https://github.com/xiazhiqiang/javascript/tree/main/examples/module1#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiazhiqiang/javascript.git"
+  },
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "test": "npm run build && node ./dist/index"
+  },
+  "bugs": {
+    "url": "https://github.com/xiazhiqiang/javascript/issues"
+  },
+  "dependencies": {
+    "module2": "^0.1.0"
+  }
+}
